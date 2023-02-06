@@ -3,8 +3,20 @@ import java.util.Random;
 
 public class Snake {
     public static void main(String[] args) {
-        Random rand = new Random();
-        int diceRoll = rand.nextInt(6) + 1;
-        System.out.println("Dice roll: " + diceRoll);
+
+        int singlePlayerValue = 0;
+        int player = 0;
+        int dice = 1 + (int) (Math.random() * 6);
+        System.out.println("initial playerPosition: " + player);
+        player = player + dice;
+        String option = "" + player;
+        if (option == "No play") {
+            System.out.println("PLAYER POSITION IS SAME");
+        } else if (option == "Ladder") {
+            player = player + 10;
+        } else if (option == "Snake") {
+            player = player - 10;
+        }
+        System.out.println(option + dice);
     }
 }
