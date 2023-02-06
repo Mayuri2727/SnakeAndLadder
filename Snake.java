@@ -5,6 +5,7 @@ public class Snake {
     private static final int NO_PLAY = 0;
     private static final int LADDER = 1;
     private static final int SNAKE = 2;
+    public static void main(String[] args) {
     int currentPosition = 0;
     Random rand = new Random();
 
@@ -30,4 +31,5 @@ public class Snake {
     }
 
             System.out.println("Player has reached 100!");
+}
 }
