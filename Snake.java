@@ -3,8 +3,8 @@ import java.util.Random;
 
 public class Snake {
     public static void main(String[] args) {
-        int player = 0;
-        int singlePlayer=0;
-        System.out.println("Start position is: " + player);
+        Random rand = new Random();
+        int diceRoll = rand.nextInt(6) + 1;
+        System.out.println("Dice roll: " + diceRoll);
     }
 }
